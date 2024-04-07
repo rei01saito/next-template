@@ -1,11 +1,11 @@
 services:
   node:
-    build: 
+    build:
       context: ./.docker/node
     container_name: next-template-node
     volumes:
       - ./:/usr/src
-    command: /bin/bash -c "npm run dev"
+    command: /bin/bash -c "yarn && yarn dev"
     ports:
       - 3000:3000
     tty: true
