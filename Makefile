@@ -1,18 +1,18 @@
 # container
 build:
-	docker-compose build --no-cache
+	docker compose build --no-cache
 	@make up
 up:
-	docker-compose up -d
+	docker compose up -d
 ps:
-	docker-compose ps
+	docker compose ps
 stop:
-	docker-compose stop
+	docker compose stop
 down:
-	docker-compose down
+	docker compose down
 destroy:
-	docker-compose down --rmi all --volumes --remove-orphans
+	docker compose down --rmi all --volumes --remove-orphans
 
 # node
 node:
-	docker-compose exec node bash
+	docker compose exec node bash
