@@ -16,3 +16,7 @@ destroy:
 # node
 node:
 	docker compose exec node bash
+
+# firebase
+firebase-emulators:
+	docker compose exec firebase bash
